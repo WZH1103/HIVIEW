@@ -5,37 +5,37 @@ GSF_HOME ?= $(PWD)
 GSF_CPU_ARCH ?= XXX
 
 
-MOD_DIRS := mod/bsp   \
-			mod/mpp/${GSF_CPU_ARCH} \
-			mod/codec \
-			mod/rtsps \
-			mod/rec   \
-			mod/webs  \
-			mod/onvif \
-			mod/svp   \
-			mod/rtmps \
-			mod/sips  \
-			mod/srts  \
-			mod/app 
+MOD_DIRS := mod/bsp
+MOD_DIRS += mod/mpp/${GSF_CPU_ARCH}
+MOD_DIRS += mod/codec
+MOD_DIRS += mod/rtsps
+MOD_DIRS += mod/rec
+MOD_DIRS += mod/webs
+MOD_DIRS += mod/onvif
+MOD_DIRS += mod/svp
+MOD_DIRS += mod/rtmps
+MOD_DIRS += mod/sips
+MOD_DIRS += mod/srts
+MOD_DIRS += mod/app 
 
-FW_DIRS :=  fw/nm       \
-			fw/cfifo    \
-			fw/cjson    \
-			fw/mxml     \
-			fw/comm     \
-			fw/tindex   \
-			fw/libmov   \
-			fw/libfont  \
-			fw/libhttp  \
-			fw/librtp   \
-			fw/librtsp  \
-			fw/librtmp  \
-			fw/libmpeg  \
-			fw/libsip   \
-			fw/libflv   \
-			fw/h26xbits \
-			fw/gsoap    \
-			fw/lvgl 
+FW_DIRS :=  fw/nm
+FW_DIRS +=  fw/cfifo
+FW_DIRS +=  fw/cjson
+FW_DIRS +=  fw/mxml
+FW_DIRS +=  fw/comm
+FW_DIRS +=  fw/tindex
+FW_DIRS +=  fw/libmov
+FW_DIRS +=  fw/libfont
+FW_DIRS +=  fw/libhttp
+FW_DIRS +=  fw/librtp
+FW_DIRS +=  fw/librtsp
+FW_DIRS +=  fw/librtmp
+FW_DIRS +=  fw/libmpeg
+FW_DIRS +=  fw/libsip
+FW_DIRS +=  fw/libflv
+FW_DIRS +=  fw/h26xbits
+FW_DIRS +=  fw/gsoap
+FW_DIRS +=  fw/lvgl 
 
 CLEAN_DIRS := $(addprefix _cls_, $(FW_DIRS) $(MOD_DIRS))
 
