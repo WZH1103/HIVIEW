@@ -24,6 +24,18 @@
 ##### 12, SVP:  YOLO/LPR
 ##### 13, UVC:  H264/MJPEG
 
+## How to use?
+### 1,Config source
+> source build/3516d
+### 2,Compile all
+> make
+### 3,Compile single mod
+> cd mod/app
+
+> make
+### 4,Clean
+> make clean
+
 <img src=/res/diagram.jpg width=88% />
 <img src=/res/webrtc.png width=82% />
 
