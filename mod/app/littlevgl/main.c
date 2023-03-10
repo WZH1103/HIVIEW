@@ -471,7 +471,7 @@ static void* lvgl_main(void* p)
         lv_obj_t *label_note = lv_label_create(obj_note, NULL);
         lv_obj_set_style(label_note, &style_label);
         lv_obj_align(label_note, NULL, LV_ALIGN_IN_LEFT_MID, 8, 0);
-        lv_label_set_text(label_note, "LittlevGL && https://github.com/openhisilicon/HIVIEW");
+        lv_label_set_text(label_note, "LittlevGL && https://github.com/WZH1103/HIVIEW");
       #endif
     #endif
     
